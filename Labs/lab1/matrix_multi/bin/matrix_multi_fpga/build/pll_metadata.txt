@@ -1,0 +1,1 @@
+clock-frequency-low:266 clock-frequency-high:532
