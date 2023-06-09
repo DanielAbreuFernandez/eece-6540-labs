@@ -93,8 +93,8 @@ void ImageRotation(queue &q, float *image_in, float *image_out,
 
 	/* Bound checking to make sure xpos and ypos are in range */
 	// TODO: 
-        if(((int)xpos >= 0) && ((int)xpos<1) &&
-           ((int)ypos >= 0) && ((int)ypos<1) )
+        if(((int)xpos >= 0) && ((int)xpos<480) &&
+           ((int)ypos >= 0) && ((int)ypos<480) )
         {
            /* read (ix,iy) src data and store at (xpos,ypos) in dest data
             * in this case, because we rotate about the origin and
