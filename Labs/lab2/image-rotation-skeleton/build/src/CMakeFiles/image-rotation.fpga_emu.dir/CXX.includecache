@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/Utils/bmp-utils.h
+
+../src/Utils/gold.h
+
+../src/Utils/utils.h
+OpenCL/opencl.h
+-
+CL/cl.h
+-
+
+/home/u192974/eece-6540-labs/Labs/lab2/image-rotation-skeleton/src/image-rotation.cpp
+CL/sycl.hpp
+-
+array
+-
+iostream
+-
+dpc_common.hpp
+/home/u192974/eece-6540-labs/Labs/lab2/image-rotation-skeleton/src/dpc_common.hpp
+sycl/ext/intel/fpga_extensions.hpp
+-
+utils.h
+/home/u192974/eece-6540-labs/Labs/lab2/image-rotation-skeleton/src/utils.h
+bmp-utils.h
+/home/u192974/eece-6540-labs/Labs/lab2/image-rotation-skeleton/src/bmp-utils.h
+gold.h
+/home/u192974/eece-6540-labs/Labs/lab2/image-rotation-skeleton/src/gold.h
+

@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../libUtils.a  CMakeFiles/Utils.dir/bmp-utils.c.o CMakeFiles/Utils.dir/gold.c.o CMakeFiles/Utils.dir/utils.c.o
+/usr/bin/ranlib ../../libUtils.a

@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/u192974/eece-6540-labs/Labs/lab2/image-rotation-skeleton/src/Utils/bmp-utils.c
+stdio.h
+-
+stdlib.h
+-
+bmp-utils.h
+/home/u192974/eece-6540-labs/Labs/lab2/image-rotation-skeleton/src/Utils/bmp-utils.h
+
+/home/u192974/eece-6540-labs/Labs/lab2/image-rotation-skeleton/src/Utils/bmp-utils.h
+
+/home/u192974/eece-6540-labs/Labs/lab2/image-rotation-skeleton/src/Utils/gold.c
+stdio.h
+-
+stdlib.h
+-
+gold.h
+/home/u192974/eece-6540-labs/Labs/lab2/image-rotation-skeleton/src/Utils/gold.h
+
+/home/u192974/eece-6540-labs/Labs/lab2/image-rotation-skeleton/src/Utils/gold.h
+
+/home/u192974/eece-6540-labs/Labs/lab2/image-rotation-skeleton/src/Utils/utils.c
+stdio.h
+-
+stdlib.h
+-
+
