@@ -3,6 +3,7 @@
 #include <math.h>
 #include <stdlib.h>
 #include <time.h>
+#include <sycl/ext/intel/fpga_extensions.hpp>
 
 // dpc_common.hpp can be found in the dev-utilities include folder.
 // e.g., $ONEAPI_ROOT/dev-utilities/<version>/include/dpc_common.hpp
@@ -68,7 +69,11 @@ float MonteCarloPi(rgb image_plot[]) {
   }
 
   // Set up sycl queue
-  queue q(default_selector_v);
+  //queue q(default_selector_v);
+  
+  ext::intel::fpga_emulator_selector d_selector;
+  queue q(d_selector);
+  
   std::cout << "\nRunning on "
             << q.get_device().get_info<sycl::info::device::name>() << "\n";
 
