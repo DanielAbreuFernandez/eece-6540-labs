@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/montecarlopi.dir/monte_carlo_pi.cpp.o"
-  "montecarlopi.pdb"
   "montecarlopi"
+  "montecarlopi.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

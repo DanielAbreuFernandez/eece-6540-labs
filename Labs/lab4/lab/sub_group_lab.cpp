@@ -35,15 +35,21 @@ int main() {
       
     //# YOUR CODE GOES HERE 
 
-
-
+    int result = reduce_over_group(sg, data[i], plus<>()); 
       
+    //# write sub_group sum in first location for each sub_group
+    if (sg.get_local_id()[0] == 0) {
+      data[i] = result;
+    } else {
+      data[i] = 0;
+    }
+
     //# STEP 3 : save each sub-group sum to sg_data array
-    
-    //# YOUR CODE GOES HERE 
       
-
-
+    for (int i = 0; i < 256; i++){
+        sg_data[i] = data[N/S*i];
+    }
+    
   }).wait();
 
   //# print sg_data array
@@ -55,8 +61,10 @@ int main() {
 
   //# YOUR CODE GOES HERE 
 
- 
-
+  for(int i = 0; i < N/S; i++) {
+      sum = sum + sg_data[i];
+  }
+    
   std::cout << "\nSum = " << sum << "\n";
   
   //# free USM allocations
